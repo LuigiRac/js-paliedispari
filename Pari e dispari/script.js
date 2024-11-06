@@ -17,4 +17,5 @@ let userNumber = prompt("Inserire un numero da 1 a 5, grazie!")
 function rollDice() {
     return Math.floor(Math.random() * (5 - 1 + 1) ) + 1;
   }
-  
+  const randomNumerPc = rollDice();
+  console.log(randomNumerPc);
