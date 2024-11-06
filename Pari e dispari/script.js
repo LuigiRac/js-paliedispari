@@ -12,7 +12,9 @@ Dichiariamo chi ha vinto.
 
 const evenOdd = [
     "pari",
-    "dispari"
+    "dispari",
+    "even",
+    "odd"
   ]
 
 let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
@@ -23,7 +25,10 @@ let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
  } else {
     console.log ( "Valore non corretto!");
  }
-  
+ while (!evenOdd.includes(evenOddUser)) {
+    console.log("Valore non corretto!");
+    evenOddUser = prompt("Indicare se 'pari' o 'dispari', grazie!");
+}
 
 
 let userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"))
