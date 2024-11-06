@@ -22,4 +22,11 @@ function rollDice() {
 
 
 
- 
+  function sumAll(userNumber, randomNumerPc) {
+    let sum = userNumber + randomNumerPc;
+    return sum;
+  }
+
+  let result = sumAll(userNumber,randomNumerPc);
+  console.log("Il risultato finale è: " + result);
+  
