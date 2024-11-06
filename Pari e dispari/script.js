@@ -17,6 +17,10 @@ const evenOdd = [
     "odd"
   ]
 
+  const validNumber = [
+    1, 2, 3, ,4 ,5
+  ];
+
 let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
   console.log ("Utente ha scelto: " + evenOddUser + "!")
 
@@ -31,13 +35,28 @@ let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
 }
 
 
+
 let userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"))
   console.log ("Il numero inserito dall'utente è: " + userNumber)
 
-function rollDice() {
+ if (validNumber.includes(userNumber)){
+    console.log("Valore corretto!");
+ } else {
+    console.log ( "Valore non corretto!");
+ }
+
+
+  while (!validNumber.includes(userNumber)) {
+    console.log("Valore non corretto!");
+    userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"));
+}
+
+
+
+function rollNumber() {
     return Math.floor(Math.random() * (5 - 1 + 1) ) + 1;
   }
-  const randomNumerPc = rollDice();
+  const randomNumerPc = rollNumber();
   console.log("Il numero inserito dal PC è: " + randomNumerPc);
 
 
@@ -57,3 +76,4 @@ function rollDice() {
  else {
     console.log("Il numero è dispari");
  }
+
