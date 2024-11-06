@@ -18,7 +18,7 @@ const evenOdd = [
   ]
 
   const validNumber = [
-    1, 2, 3, ,4 ,5
+    1, 2, 3, 4 ,5
   ];
 
 let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
@@ -45,12 +45,12 @@ let userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"))
     console.log ( "Valore non corretto!");
  }
 
-
   while (!validNumber.includes(userNumber)) {
     console.log("Valore non corretto!");
     userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"));
 }
 
+console.log();
 
 
 function rollNumber() {
@@ -77,11 +77,4 @@ function rollNumber() {
     console.log("Il numero è dispari");
  }
 
- if (result % 2 === 0) {
-    console.log("Il numero è pari!");
-    
-  }
- else {
-    console.log("Il numero è dispari");
- }
 
