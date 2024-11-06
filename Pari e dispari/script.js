@@ -11,11 +11,15 @@ Dichiariamo chi ha vinto.
 */
 
 
-let userNumber = prompt("Inserire un numero da 1 a 5, grazie!")
-  console.log ("Il numero inserito è: " + userNumber)
+let userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"))
+  console.log ("Il numero inserito dall'utente è: " + userNumber)
 
 function rollDice() {
     return Math.floor(Math.random() * (5 - 1 + 1) ) + 1;
   }
   const randomNumerPc = rollDice();
-  console.log(randomNumerPc);
+  console.log("Il numero inserito dal PC è: " + randomNumerPc);
+
+
+
+ 
