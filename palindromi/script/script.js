@@ -12,6 +12,13 @@ const userWord = prompt("Inserire una parola, grazie!")
 
 
   const reversedText = turnWord(userWord);
+
+  if (userWord.toLowerCase() === reversedText.toLowerCase()){
+    console.log("La parola è palindroma");
+  }
+  else {
+    console.log("La parola NON è palindroma")
+  }
   console.log(reversedText);
   
 
@@ -25,6 +32,6 @@ const userWord = prompt("Inserire una parola, grazie!")
     return reversedWord;
   }
 
-  if (condition) {
-    
-  }
+
+
+  
