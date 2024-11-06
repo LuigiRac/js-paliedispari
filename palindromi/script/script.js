@@ -7,10 +7,14 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma 
 */
 
-let userWord = prompt("Inserire una parola, grazie!")
+const userWord = prompt("Inserire una parola, grazie!")
   console.log ("La parola inserita è: " + userWord + "!")
 
-  function palindromeWord (userWord) {
-    palindromeWord.reversed
-    
+  
+
+  let reversedText = ""; 
+
+  for (let i = userWord.length -1; i >= 0; i--){
+    reversedText = reversedText + userWord[i];
+     console.log(reversedText);
   }
