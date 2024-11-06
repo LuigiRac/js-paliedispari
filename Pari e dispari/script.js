@@ -10,6 +10,21 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
+const evenOdd = [
+    "pari",
+    "dispari"
+  ]
+
+let evenOddUser = prompt("Insdicare se pari o dispari, grazie!")
+  console.log ("Utente ha scelto: " + evenOddUser + "!")
+
+  if (evenOdd.includes(evenOddUser)){
+    console.log("Valore corretto!");
+ } else {
+    console.log ( "Valore non corretto!");
+ }
+  
+
 
 let userNumber = parseInt(prompt("Inserire un numero da 1 a 5, grazie!"))
   console.log ("Il numero inserito dall'utente è: " + userNumber)
@@ -21,7 +36,6 @@ function rollDice() {
   console.log("Il numero inserito dal PC è: " + randomNumerPc);
 
 
-
   function sumAll(userNumber, randomNumerPc) {
     let sum = userNumber + randomNumerPc;
     return sum;
@@ -30,3 +44,11 @@ function rollDice() {
   let result = sumAll(userNumber,randomNumerPc);
   console.log("Il risultato finale è: " + result);
   
+
+  if (result % 2 === 0) {
+    console.log("Il numero è pari!");
+    
+  }
+ else {
+    console.log("Il numero è dispari");
+ }
