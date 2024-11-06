@@ -10,11 +10,21 @@ Creare una funzione per capire se la parola inserita è palindroma
 const userWord = prompt("Inserire una parola, grazie!")
   console.log ("La parola inserita è: " + userWord + "!")
 
+
+  const reversedText = turnWord(userWord);
+  console.log(reversedText);
   
 
-  let reversedText = ""; 
+  function turnWord(word) {
+    let reversedWord = ""; 
 
-  for (let i = userWord.length -1; i >= 0; i--){
-    reversedText = reversedText + userWord[i];
-     console.log(reversedText);
+    for (let i = word.length -1; i >= 0; i--){
+      reversedWord = reversedWord + userWord[i];
+    }
+
+    return reversedWord;
+  }
+
+  if (condition) {
+    
   }
